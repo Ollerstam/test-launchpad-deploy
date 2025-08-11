@@ -425,6 +425,17 @@ export interface SharedPerks extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedProjects extends Struct.ComponentSchema {
+  collectionName: 'components_shared_projects';
+  info: {
+    displayName: 'Projects';
+    icon: 'alien';
+  };
+  attributes: {
+    projectTitle: Schema.Attribute.String;
+  };
+}
+
 export interface SharedSection extends Struct.ComponentSchema {
   collectionName: 'components_shared_sections';
   info: {
@@ -535,6 +546,7 @@ declare module '@strapi/strapi' {
       'shared.launches': SharedLaunches;
       'shared.link': SharedLink;
       'shared.perks': SharedPerks;
+      'shared.projects': SharedProjects;
       'shared.section': SharedSection;
       'shared.seo': SharedSeo;
       'shared.social-media-icon-links': SharedSocialMediaIconLinks;

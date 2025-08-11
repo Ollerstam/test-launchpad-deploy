@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_projects",
+  "info": {
+    "displayName": "Projects",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "projectTitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
